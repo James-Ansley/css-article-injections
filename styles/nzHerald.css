@@ -1,0 +1,42 @@
+/*
+Domain: https://www.nzherald.co.nz
+CSS injection that sets width of NZ Herald articles to 80 characters and removes
+unnecessary clutter - footers, blocks with links to other articles, etc.
+*/
+
+
+/* Make window full width */
+#fusion-app, .container {
+    width: 100%;
+    max-width: 100%;
+}
+
+/* Main article */
+main {
+    max-width: 80ch;
+    width: 80ch;
+    padding-bottom: 5rem;
+    margin: auto;
+}
+
+.article {
+    text-align: justify;
+    display: block;
+}
+
+/* remove aside */
+.article-sidebar {
+    display: none;
+}
+
+/* remove links to other articles */
+.recommended-articles,
+.c-suggest-links,
+.read-more-links,
+.latest-from-articles__section {
+    display: none;
+}
+
+.footer {
+    display: none;
+}

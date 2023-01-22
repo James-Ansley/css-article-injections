@@ -1,0 +1,42 @@
+/*
+Domain: https://www.rnz.co.nz
+CSS injection that sets width of RNZ articles to 80 characters and removes
+unnecessary clutter - footers, blocks with links to other articles, etc.
+*/
+
+
+/* Main article */
+.content__primary {
+    position: relative;
+    max-width: 80ch;
+    width: 80ch !important;
+    margin: auto !important;
+    float: inherit !important;
+}
+
+.article__body {
+    text-align: justify;
+    font-size: 1rem;
+}
+
+/* remove sub-header */
+.c-sub-nav, .c-sub-nav--inline {
+    display: none
+}
+
+/* remove vertical dividing bar */
+#documentContent:before {
+    display: none;
+}
+
+/* remove aside */
+.content__secondary {
+    display: none;
+}
+
+/* remove content after article */
+.c-next-prev,
+.c-next-prev--bottom,
+.site-footer {
+    display: none;
+}

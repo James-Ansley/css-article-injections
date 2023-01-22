@@ -24,7 +24,8 @@ main article {
 
 /* - links inserted in the middle of articles and side banner */
 .grid-rail,
-div[data-qa="subscribe-promo"] {
+div[data-qa="subscribe-promo"],
+div[data-testid="carousel-container"] {
     display: none;
 }
 
@@ -40,6 +41,7 @@ div[data-testid="coral-comments"] {
 
 /* - hide items after article */
 footer > div:first-child,
+div[data-qa="most-read"],
 div[data-qa="more-from-the-post"],
 .hide-for-print[data-testid="collections__wrapper"] {
     display: none;

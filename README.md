@@ -1,6 +1,6 @@
-# CSS Injections
+# CSS Article Injections
 
-Some CSS injections which aim to achieve distraction-free article reading.
+Some CSS injections that aim to achieve distraction-free article reading.
 Consider using with a CSS injector plugin like
 [CustomCSS](https://addons.mozilla.org/en-US/firefox/addon/customcss-injector/).
 
