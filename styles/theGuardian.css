@@ -1,0 +1,86 @@
+/*
+Domain: https://www.theguardian.com
+CSS injection that sets width of The Guardian Post articles to 80 characters and
+removes unnecessary clutter - footers, blocks with links to other articles, etc.
+
+News reading girlies, I struggled with this one.
+*/
+
+/* Aside */
+div[data-gu-name="right-column"],
+aside,
+figure[data-spacefinder-role="richLink"] {
+    display: none;
+}
+
+/* Emph lines that get added to everything */
+div[data-gu-name="lines"],
+*[aria-hidden="true"] {
+    display: none;
+}
+
+/* Remove content before and after article */
+main > :not(article),
+footer {
+    display: none;
+}
+
+/* START Header */
+#bannerandheader gu-island[name="SupportTheG"],
+#bannerandheader nav,
+#bannerandheader a[data-link-name*="printsubs"],
+#bannerandheader a[data-link-name*="job-cta"],
+#bannerandheader a[data-link-name*="search"],
+#bannerandheader > div > section,
+gu-island[name="HeaderTopBar"] {
+    display: none;
+}
+
+#bannerandheader a[data-link-name*="logo"] svg {
+    height: 1.5rem;
+    margin: 0.5rem auto;
+    float: inherit;
+    display: block;
+}
+
+
+gu-island[name="HeaderTopBar"] > div > div > :not(:nth-child(2)) {
+    display: none;
+}
+
+gu-island[name="HeaderTopBar"] > div {
+    background-color: inherit;
+}
+
+#bannerandheader > header > div > div > div {
+    margin: auto
+}
+
+div[data-gu-name="headline"] img {
+    display: none;
+}
+
+/* END Header */
+
+/* body */
+article > div > div > div > *,
+#maincontent {
+    min-width: 80ch;
+    font-size: 1rem;
+    margin: auto;
+    text-align: justify;
+}
+
+main {
+    padding: 3rem 0;
+}
+
+/* Stopping the random asides */
+article > div > div {
+    display: block;
+}
+
+article > div {
+    border: none;
+}
+
