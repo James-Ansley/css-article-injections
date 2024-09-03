@@ -1,0 +1,16 @@
+#subscriber-recirculation-bottom-sheet {
+  display: none;
+}
+
+
+@media print {
+  @page {
+    size: A4;
+    margin: 1.25in;
+  }
+
+  :root, body {
+    font-size: 14px;
+  }
+}
+

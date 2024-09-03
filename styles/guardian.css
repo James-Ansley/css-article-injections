@@ -1,0 +1,52 @@
+#maincontent p {
+  line-height: 1.5;
+}
+
+div[data-gu-name="right-column"] {
+  display: none;
+}
+
+gu-island[data-link-name="related-stories"] {
+  display: none;
+}
+
+gu-island[props] {
+  display: none;
+}
+
+figure[data-spacefinder-type*="NewsletterSignup"] {
+  display: none;
+}
+
+article + aside, article + * + * + section {
+  display: None;
+}
+
+article > div > div {
+  grid-template-columns: 320px 1px 620px 60px 320px;
+}
+
+@media print{
+  :root {
+    font-size: 16px;
+  }
+
+  h1, aside, figure {
+    break-inside: avoid-page;
+  }
+
+  picture {
+    max-width: 75%;
+    margin: auto;
+  }
+
+  article > div > div {
+    display: block !important;
+  }
+
+  @page {
+    size: a4;
+    margin: 1.25in 1.25in;
+  }
+}
+

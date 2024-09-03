@@ -1,0 +1,55 @@
+:root {
+  --primary: #192734;
+  --primary-alt: #384047;
+  --background: #f2f2f2;
+  --surface: #caccce;
+
+  font-size: 1.1rem;
+}
+
+body, .container .main {
+  background-color: var(--background);
+  color: var(--primary);
+}
+
+#masthead, .c-sub-nav {
+  background-color: var(--surface);
+}
+
+.article__main {
+  flex-basis: unset;
+}
+
+.article-section-split {
+  width: 65ch;
+  font-size: 1rem;
+}
+
+article {
+  font-family: serif;
+}
+
+#premium-toaster {
+  display: none;
+}
+
+.article-sidebar {
+  display: none;
+}
+
+.recommended-for-you, .recommended-articles {
+  display: none;
+}
+
+.top-box-recommended {
+  display: none;
+}
+
+.breaking-news {
+  display: none;
+}
+
+.latest-from-articles__section {
+  display: none;
+}
+

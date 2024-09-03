@@ -1,42 +1,46 @@
-/*
-Domain: https://www.rnz.co.nz
-CSS injection that sets width of RNZ articles to 80 characters and removes
-unnecessary clutter - footers, blocks with links to other articles, etc.
-*/
+:root {
+  --primary: #192734;
+  --primary-alt: #384047;
+  --background: #f2f2f2;
+  --surface: #caccce;
 
-
-/* Main article */
-.content__primary {
-    position: relative;
-    max-width: 80ch;
-    width: 80ch !important;
-    margin: auto !important;
-    float: inherit !important;
+  font-size: 1.1rem;
 }
 
-.article__body {
-    text-align: justify;
-    font-size: 1rem;
+body {
+  background-color: var(--background);
+  color: var(--primary);
 }
 
-/* remove sub-header */
-.c-sub-nav, .c-sub-nav--inline {
-    display: none
+#masthead, .c-sub-nav {
+  background-color: var(--surface);
 }
 
-/* remove vertical dividing bar */
-#documentContent:before {
-    display: none;
-}
-
-/* remove aside */
 .content__secondary {
-    display: none;
+  display: none;
 }
 
-/* remove content after article */
-.c-next-prev,
-.c-next-prev--bottom,
-.site-footer {
-    display: none;
+.content__primary {
+  float: unset;
+  margin: auto;
+  width: 50ch;
+  font-size: 1rem;
 }
+
+#documentContent::before {
+  all: unset;
+}
+
+.article__body p {
+  font-size: 1rem;
+}
+
+*::selection {
+  background: #FFE500;
+  color: #121212;
+}
+
+a::selection {
+  text-decoration: underline;
+}
+
