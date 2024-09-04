@@ -2,6 +2,23 @@
   display: none;
 }
 
+div[data-testid^="RelatedLinksBlock"] {
+  display: none;
+}
+
+#bottom-sheet-sensor {
+  display: none;
+}
+
+
+.bottom-of-article + div {
+  display: none;
+}
+
+nav#site-index {
+  display: none;
+}
+
 
 @media print {
   @page {
