@@ -1,0 +1,81 @@
+:root {
+    --primary: #192734;
+    --primary-alt: #384047;
+    --background: #f8f8f8;
+    --surface: #eeeeee;
+    --surface-alt: #cccccc;
+}
+
+#main-page-content {
+  background-color: var(--background);
+  color: var(--primary)
+}
+
+.introduction-summary, .callout-container {
+  background-color: var(--surface);
+}
+
+#book-markup-container {
+  font-size: 1.1rem;
+  letter-spacing: 0.03em;
+  width: 60ch;
+  margin: auto;
+  font-family: Arial, serif;
+}
+
+#book-markup-container p {
+  font-size: 1em;
+  line-height: 1.45;
+}
+
+#book-markup-container .readable-text {
+  padding: 0;
+}
+
+#book-main-content-container .callout-container,
+#book-markup-container .browsable-container {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#header {
+  background-color: transparent;
+  background: transparent;
+  border: none;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+#header > nav {
+  visibility: hidden;
+  background-color: var(--surface);
+  display: block;
+  flex: 1;
+}
+
+#header:hover > nav {
+  visibility: visible;
+  border-bottom: 1px solid var(--surface-alt);
+}
+
+#toc-icon-container {
+  left: 1ch;
+  transform: unset;
+  position: unset;
+  display: block;
+  border-radius: 0 0 0.25em 0;
+}
+
+#header-browse-container {
+  display: none;
+}
+
+#meap-sticker {
+  display: none;
+}
+
+*::selection {
+  background: #FFE500;
+  color: #121212;
+}
+
