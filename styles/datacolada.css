@@ -1,17 +1,39 @@
 :root {
+  --primary: #192734;
+  --primary-alt: #384047;
+  --background: #f2f2f2;
+  --surface: #caccce;
+
+  font-size: 1.1rem;
+}
+
+body, .website-content {
+  background-color: var(--background);
+  color: var(--primary);
+}
+
+:root {
   font-size: 1em;
 }
 
 article .entry-content {
-  font-size: 1rem;
+  font-size: 1em;
+}
+
+p {
+  text-align: left;
+}
+
+.content-wrap {
+  width: 1500px;
 }
 
 .website-content {
-  font-size: 1rem;
+  font-size: 1.1rem;
   display: grid;
   grid-template-columns: 1fr 65ch 1fr;
   grid-template-rows: 1fr;
-  gap: 0px 1em;
+  gap: 0px 2em;
   grid-auto-flow: row;
   grid-template-areas:
     ". primary secondary";
